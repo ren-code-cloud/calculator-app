@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Poppins:ital,wght@0,400;1,200;1,400;1,500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  background: #FFF5E0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.__container {
+  background: #2B2A4C;
+  padding:.8em;
+  border-radius: 1em;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: repeat(4, 60px);
+  grid-template-rows: minmax(100px, auto) repeat(5, 60px);
+  gap: .5em;
+  box-shadow: 0 0 1em rgba(0,0,0, 0.5);
+}
+
+
+.__container > button {
+  background: #2B2A4C;
+  border: none;
+  outline: none;
+  border-radius: .5em;
+  font-size: 1.5em;
+  border: 1px solid rgba(20,30,70, .7);
+  color: #fff;
+}
+.__span-two {
+  grid-column: span 2;
+}
+.__output {
+  grid-column: 1 / -1;
+  padding-right: 1em;
+  background: #2B2A4C;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+  row-gap: .7em;
+  border-radius: .5em;
+  box-shadow: inset 5px 5px 1em rgba(0,0,0, 0.1),
+  1em 1em 1em rgba(0,0,0, 0.1);
+}
+.__output .__prevValue {
+  font-size: 1em;
+}
+.__output .__curValue {
+  font-size: 2em;
+}
